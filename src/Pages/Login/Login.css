@@ -1,0 +1,102 @@
+.section{
+ 
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    
+}
+
+.first{
+    background-image: url("../../Images/doctor2.jpeg");
+    background-size: cover;
+    top: 10%;
+    width: 500px;
+    height: 700px;
+}
+
+.but{
+    padding-left: 500px;
+    padding-top: 40px;
+    background-color: white;
+    border: none;
+}
+
+.button3{
+      padding-left: 500px;
+    padding-top: 40px;
+      background-color: white;
+      border: none;
+    color: rgb(226, 52, 52);
+    font-size: 20px;
+}
+
+.form-label{
+    display: block;
+    background-color: white;
+    padding-top: 30px;
+    padding-left: 20px;
+    font-weight: bold;
+    color: hsl(213, 96%, 18%);
+}
+
+.form-input{
+    margin-left: 20px;
+    margin-top: 10px;
+    background-color:rgb(221, 221, 255);
+    width: 70%;
+    border-radius: 5px;
+    height: 35px;
+    border: 1px solid hsl(229, 24%, 87%) ;
+}
+
+.nav_button3{
+    background-color:rgb(50, 50, 69);
+    width:200px;
+    height:35px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    outline: none;
+    font-size: 15px;
+    margin-left: 20px;
+    width: 70%;
+    padding: 5px;
+    margin-top: 20px;
+    
+}
+
+.error-message{
+    color: red;
+    background-color: white;
+    padding-left: 22px;
+    padding-top: 5px;
+}
+
+@media only screen and (min-width:0px) and (max-width:900px){
+    .sec{
+        display: none;
+    }
+    
+   .button3{
+        display: none;
+   }
+   
+   .form-input{
+    margin-left: 60px;
+
+   }
+   .form-label{
+    margin-left: 40px;
+   }
+   .nav_button3{
+    margin-left: 60px;
+   }
+   .text1{
+    margin-left: 40px;
+   }
+    .text2{
+    margin-right: 60px;
+   }
+      
+}

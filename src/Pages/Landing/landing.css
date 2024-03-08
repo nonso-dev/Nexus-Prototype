@@ -1,0 +1,218 @@
+    *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+}
+
+body {
+ /* font-family: ; */
+   font-family: "Poppins", sans-serif;
+}
+
+.navbar{
+    padding: 4% 10% 0;
+    display:flex;
+    background-color: hsl(227, 53%, 97%);
+    padding-bottom: 50px;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+.circle{
+    border-radius: 50%;
+    background-color: rgb(226, 52, 52);
+    top: 20%;
+    left: 10%;
+    z-index: -1;
+    position: absolute;
+    width: 200px;
+    height:200px;
+ 
+}
+.nav_items{
+  
+    display:flex;
+    justify-content: space-around;
+    font-size: 13px;
+    font-weight: 500;
+    color:hsl(233, 12%, 13%)
+
+}
+
+.button{
+    margin-right: 20px;
+    width:100px;
+    height:35px;
+    background-color: hsl(227, 53%, 97%);
+    border-radius: 5px;
+    border: none;
+    font-size:15px;
+    font-weight: bold;
+    color: rgb(226, 52, 52)
+}
+
+.button4{
+    margin-right: 20px;
+    width:200px;
+    height:35px;
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid red;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size:15px;
+    font-weight: bold;
+    color: rgb(226, 52, 52)
+}
+
+.button5{
+    margin-right: 20px;
+    width:200px;
+    height:35px;
+    background-color: rgb(226, 52, 52);
+    border-radius: 20px;
+    border: 1px solid red;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size:15px;
+    font-weight: bold;
+    color: white
+}
+
+
+
+.nav_button{
+    background-color:rgb(226, 52, 52);
+    width:100px;
+    height:35px;
+    border-radius: 18px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-size: 15px;
+
+    padding: 5px;
+    
+}
+
+.nav_button2{
+    background-color:rgb(226, 52, 52);
+    width:200px;
+    height:35px;
+    border-radius: 18px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-size: 15px;
+
+    
+    
+}
+.nav_hamburger{
+    display:none
+}
+
+.tex{
+   
+      font-size: 50px;
+      font-weight: bold;
+      padding-left: 55px ;
+      padding-top: 30px;
+         
+}
+
+.text{
+ 
+              font-weight: lighter;
+              font-size: 17px;
+              color: gray;
+}
+
+.section{
+    padding: 8% 15%;
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    padding-top: 200px;
+    
+
+}
+
+ .menu-button {
+         /* position: fixed; */
+              top: 20px;
+              left: 20px;
+              padding-left: 100px;
+              z-index: -1;
+              box-shadow: rgb(198, 195, 195);
+
+            }
+
+            .dropdown-menu {
+              position: fixed;
+              box-shadow: rgb(198, 195, 195);
+
+              top: 0;
+              left: 0px; /* Start off-screen */
+              width: 250px;
+              height: 100%;
+              margin-top: 90px;
+              background-color: white;
+              transition: left 0.3s ease;
+            }
+
+            .dropdown-menu ul {
+              list-style-type: none;
+              padding: 0;
+              margin: 50px 0 0 0;
+              /* text-align: center; */
+            }
+
+            .dropdown-menu p {
+              padding: 20px;
+              padding-right: 150px;
+              color: black;
+            }
+
+            .dropdown-menu.open {
+              left: 0; /* Slide in */
+            }
+ 
+@media only screen and (min-width:0px) and (max-width:900px){
+    .nav_items{
+        display:none;
+    }
+    .navbar{
+        /* margin-top: 20px; */
+        padding-top: 40px;
+        height: 80px;
+    }
+    .nav_hamburger{
+        display:block
+    }
+    .nav_button{
+      display:none
+    }
+    .button{
+        display: none;
+    }
+    .second{
+        display: none;
+    }
+   .tex{
+    font-size: 26px;
+    padding-top: 25px;
+   }
+   .text{
+    font-size: 12px;
+   }
+   .nav_button2{
+    margin-top: 10px;
+   }
+    
+}
